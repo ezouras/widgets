@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+
+}
+
+form-wrapper{
+  /*display:flex;
+  justify-content: center;
+  align-items: center;
+*/
+}
+
+.autocomplete{
+  display:inline-block;
+}
+
+input{
+  /* overrides border and is invisible*/
+  border:1px solid transparent;
+  /*light grey background*/
+  background-color: #f1f1f1;
+  width:100%;
+}
+input[type=submit]{
+/*style submit button*/
+  background-color: DodgerBlue;
+  color:#fff;
+}
