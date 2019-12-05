@@ -1,0 +1,44 @@
+body{
+  background: navy;
+  color:#E8E8E8;
+}
+.radio-container{
+  display:flex;
+  align-items: center;
+
+}
+
+.radio-item{
+  margin-left:.5rem;
+}
+
+label::after{
+  content:"";
+  display:block;
+  opacity:0;
+  border-bottom:1px solid white;
+  transition:.25s;
+  margin-left:1.55rem;
+}
+
+input{
+  opacity:0;
+}
+
+label:hover::after{
+  opacity:1;
+}
+
+label:hover{
+  color:white;
+}
+
+
+
+input:checked +label{
+  color:white;
+}
+
+input:checked +label::after{
+  opacity:1;
+}
